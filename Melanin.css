@@ -1,0 +1,51 @@
+/* CSS Document */
+/*.w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}*/
+:root {
+	color-scheme: light dark;
+}
+
+nav.melanin-liq-glass {
+	filter:blur(4px);
+	opacity:0.5;
+	border:16px outset rgba(30,144,255,0.5);
+	border-radius: 32px;
+	border-image: linear-gradient(to top right, DodgerBlue, LightSkyBlue), round;
+	background-colour: rgba(30,144,255,0.5);
+}
+nav.melanin-liq-glass p {
+	margin:inherit;
+	color:inherit;
+	text-decoration:rgba(0,0,0,0.00);
+}
+
+@font-face {
+font-family:"source-sans-3-bold";
+src:url("https://use.typekit.net/af/be7f80/0000000000000000774d56ef/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/be7f80/0000000000000000774d56ef/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/be7f80/0000000000000000774d56ef/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+@font-face {
+font-family:"cofo-kabeltouw-stencil-20";
+src:url("https://use.typekit.net/af/c392b3/000000000000000077588c3c/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/c392b3/000000000000000077588c3c/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/c392b3/000000000000000077588c3c/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+body {
+  color: light-dark(#667d8b,#fff);
+  background-color: light-dark(#fff,#667d8b);
+}
+
+/*FX*/
+.melanin-liq-glass{colour:rgba(30,144,255,0.5)!important;background-color:rgba(30,144,255,0.5)}
+
+/*fonts*/
+.melanin-header{font-family: cofo-kabeltouw-stencil-20, sans-serif}
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+img{margin-bottom:-5px}a{color:inherit}
+.melanin-body{font-family: source-sans-3-bold, sans-serif}
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+img{margin-bottom:-5px}a{color:inherit}
+/*.w3-blue-grey,.w3-hover-blue-grey:hover{color:#fff!important;background-color:#607d8b!important}*/
