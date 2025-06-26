@@ -36,7 +36,7 @@ body {
 }
 /*Themes*/
 .melanin-fallout-terminal {
-  background: #232d23; /* Very dark muted green/gray */
+  background: #292929; /* kinda-black-but-not-quite-black gray */
   color: #39FF14;      /* Luminous green */
   font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
   border: 2px solid #39FF14;
