@@ -34,6 +34,39 @@ body {
   color: light-dark(#667d8b,#fff);
   background-color: light-dark(#fff,#667d8b);
 }
+/*Themes*/
+.melanin-fallout-terminal {
+  background: #232d23; /* Very dark muted green/gray */
+  color: #39FF14;      /* Luminous green */
+  font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+  border: 2px solid #39FF14;
+  border-radius: 8px;
+  box-shadow: 0 0 40px #00ff41aa, 0 0 3px #39FF14;
+  padding: 2rem 3rem;
+  max-width: 700px;
+  width: 100%;
+}
+.melanin-fallout-terminal h1,
+.melanin-fallout-terminal p,
+.melanin-fallout-terminal pre,
+.melanin-fallout-terminal code {
+  color: #39FF14;
+  text-shadow: 0 0 8px #39FF14, 0 0 2px #39FF14;
+  letter-spacing: 1px;
+}
+.melanin-fallout-terminal .terminal-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.2em;
+  background: #39FF14;
+  margin-left: 4px;
+  animation: melanin-fallout-blink 1s steps(1) infinite;
+  vertical-align: bottom;
+}
+@keyframes melanin-fallout-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
 
 /*FX*/
 .melanin-liq-glass{colour:rgba(30,144,255,0.5)!important;background-color:rgba(30,144,255,0.5)}
