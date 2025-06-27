@@ -46,6 +46,10 @@ body {
   max-width: 700px;
   width: 100%;
 }
+.w3-button.melanin-fallout-terminal:hover {
+	background: #39FF14;
+	color: black;
+}
 .melanin-fallout-terminal h1,
 .melanin-fallout-terminal p,
 .melanin-fallout-terminal pre,
