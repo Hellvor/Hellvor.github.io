@@ -44,8 +44,26 @@ body {
   box-shadow: 0 0 40px #00ff41aa, 0 0 3px #39FF14;
   padding: 2rem 3rem;
   max-width: 700px;
-  width: 100%;
+  width: 90vw;
+  min-width: 280px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  .melanin-fallout-terminal {
+    max-width: 95vw;
+    padding: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .melanin-fallout-terminal {
+    max-width: 100vw;
+    min-width: unset;
+    padding: 0.5rem;
+    border-width: 1px;
+  }
+}
+
 .w3-button.melanin-fallout-terminal:hover {
 	background: #39FF14 !important;
 	color: black !important;
