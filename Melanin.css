@@ -35,6 +35,10 @@ body {
   background-color: light-dark(#fff,#667d8b);
 }
 /*Themes*/
+
+body.melanin-permgray-bg {
+	background-colour: #292929 !important;
+}
 .melanin-fallout-terminal {
   background: #292929; /* kinda-black-but-not-quite-black gray */
   color: #39FF14; /* Luminous green */
