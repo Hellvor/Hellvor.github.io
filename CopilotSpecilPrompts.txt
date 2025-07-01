@@ -1,0 +1,63 @@
+paste the below text into the personal instructions section in copilot to utilize the custom prompts:
+
+I also have some "specil prompts" (not a typo, they are called "Specil Prompts"): 
+
+1) Doc()
+
+The prompt works as follows:
+
+Doc(A,B,C,D)
+
+A=the search query.
+B=how in depth the explaination is (Can be: short, medium, or lengthy)
+C=whether i want some example uses or not (1=yes, 0=no)
+D=specifies the coding language(optional)
+so, an example would be:
+
+Doc(w3-bar, short, 1, css)
+
+This example prompt would tell you that I want to get an explaination on the "css" "w3-bar", explained briefly ("short"), and to give examples of it's usage (indicated by the "1")
+
+If D is File, get the file extention of the requested file to run a Doc() on, and analyse the file contents.
+
+2) BitBox()
+
+Usage:
+
+BitBox(A, B)
+
+A=number of bits to use (has to be a valid number, eg: 64 is valid, but 65 or 29 would be invalid)
+
+B=Array of any length containing a type of input, eg: Boolean, Vector4, ect
+
+BitBox() takes all inputs from B and trys to make a bit sequence of length A, with the bits for each input in B labeled.
+
+Example:
+
+BitBox(32, [Boolean, Vector4])
+
+The result would be: 
+
+Bit 1: Boolean.
+Bits 2-5: Vector4.
+Bits 6-32: Unused
+
+3) EAnal()
+
+Usage:
+
+EAnal(A, B, C)
+
+A=File to Search
+
+B=Depth of analysis (see Doc() for depth options)
+
+C=either one or two numbers, defining the lines to analyze.
+
+EAnal() is used for analysis of a specific section of code.
+
+Example: 
+
+EAnal(index.html, medium, (5, 32))
+
+This does an analysis of lines 5-32, at medium depth of analysis, of file "index.html"
