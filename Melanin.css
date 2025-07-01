@@ -38,7 +38,7 @@ body {
 .melanin-fallout-terminal {
   background: #292929; /* kinda-black-but-not-quite-black gray */
   color: #39FF14; /* Luminous green */
-  font-family: consolas;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 }
 
 .w3-button.melanin-fallout-terminal:hover {
