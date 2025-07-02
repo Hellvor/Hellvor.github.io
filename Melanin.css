@@ -57,6 +57,11 @@ body.melanin-permgray-bg {
   text-shadow: 0 0 8px #39FF14, 0 0 2px #39FF14;
   letter-spacing: 1px;
 }
+span.melanin-fallout-terminal {
+  border-left: 5px, solid, #39FF14;
+  border-right: 5px, solid, #39FF14;
+  border-image: radial-gradient([circle], #39FF14, rgba(0,0,0,0));
+}
 .melanin-fallout-terminal .terminal-cursor {
   display: inline-block;
   width: 10px;
