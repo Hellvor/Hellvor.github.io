@@ -1,12 +1,41 @@
 <!--DOCTYPE html-->
 <html>
   <script src="LiveUpdateV1.js"></script>
-  <script src="scanlines.js"></script>
   <title>The 4O4 Web Project Net - Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="Melanin.css">
+   <script>
+    // Create the overlay div
+    const overlay = document.createElement('div');
+    overlay.className = 'scanlines-overlay';
+    document.body.appendChild(overlay);
+  </script>
   <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background: #222;
+      color: #fff;
+    }
+    .scanlines-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none; /* Allows clicking through */
+      z-index: 9999;
+      opacity: 0.2;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.2) 0px,
+        rgba(0,0,0,0.2) 1px,
+        transparent 2px,
+        transparent 6px
+      );
+      animation: scan-move 1s linear infinite;
+    }
+    @keyframes scan-move {
+      to { background-position: 0 6px; }
+    }
     body {
       background-color: #292929;
       color: #39FF14;
