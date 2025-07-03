@@ -1,0 +1,5 @@
+{
+    "editor.defaultFormatter": "GitHub.copilot",
+    "editor.wordWrap": "bounded",
+    "workbench.colorTheme": "GitHub Dark High Contrast"
+}
