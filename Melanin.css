@@ -5,6 +5,12 @@
 	color-scheme: light dark;
 }
 
+.melanin-title-term h1 {
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  text-align: center;
+  text-anchor: middle;
+}
+
 nav.melanin-liq-glass {
 	filter:blur(4px);
 	opacity:0.5;
