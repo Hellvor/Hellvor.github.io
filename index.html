@@ -85,7 +85,20 @@
         </div>
       </section>
       <section>
-        <search></search>
+        <div class="w3-container">
+          <input class="w3-input w3-border" type="text" id="searchBar" placeholder="Search...">
+        </div>
+        <script>
+          document.getElementById('searchBar').addEventListener('keyup', function() {
+            var filter = this.value.toUpperCase();
+            var ul = document.getElementById("myList");
+            var li = ul.getElementsByTagName('li');
+            for (var i = 0; i < li.length; i++) {
+              var txtValue = li[i].textContent || li[i].innerText;
+              li[i].style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+            }
+          });
+        </script>
       </section>
     </body>
 </html>
