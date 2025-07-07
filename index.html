@@ -100,7 +100,7 @@
         <div class="w3-container w3-rounded-xxlarge">
           <input class="w3-margin-top w3-rounded-xxlarge w3-input w3-border" type="text" id="searchBar" placeholder="Search..." style="border-color: #39FF14!important;">
         </div>
-        <ul id="myList" class="w3-ul w3-card-4">
+        <ul id="myList" class="w3-ul w3-card-4 w3-hide">
           <li>Apple</li>
           <li>Banana</li>
           <li>Cherry</li>
@@ -109,6 +109,12 @@
         </ul>
         <script>
           document.getElementById('searchBar').addEventListener('keyup', function() {
+            if ('keyup' = false) {
+              document.getElementById('myList').classList.remove('w3-hide');
+            }
+            else {
+              document.getElementById('myList').classList.add('w3-hide');
+            }
             var filter = this.value.toUpperCase();
             var ul = document.getElementById("myList");
             var li = ul.getElementsByTagName('li');
