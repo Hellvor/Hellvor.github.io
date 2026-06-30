@@ -1,0 +1,7 @@
+[book]
+title = "Chroma++ Docs"
+authors = ["Hellvor"]
+language = "en"
+
+[output.html]
+additional-css = ["src/Chroma.css"]
