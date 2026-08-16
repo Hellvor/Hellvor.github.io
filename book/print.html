@@ -37,10 +37,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-b9507a82.js";
+            window.path_to_searchindex_js = "searchindex-11865379.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-d09d9036.js"></script>
+        <script src="toc-511744fe.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -181,7 +181,7 @@
 <p>Is it annoying you that you can’t have your gadgets run code from outside sources, such as the user file?</p>
 <p>Introducing Chroma++, The most colourful coding language, and the solution to your weirdly specific problem!</p>
 <h1 id="what-is-croma"><a class="header" href="#what-is-croma">What is Croma++?</a></h1>
-<p>Chroma++ is a 3 byte bytecode esolang. Now if this means nothing to you (It certainly meant jack to me the first time I saw that jargon barf X3), that just means that it groups commands into three numbers up to 255 (or smth, idfk). It works by using the RGB values of a pixel in an image to point to code snippets in the library. The R channel is the operation, the G channel is the amount of input values, and the B channel is the output.</p>
+<p>Chroma++ is a 3 byte bytecode esolang. Now if this means nothing to you (It certainly meant jack to us the first time I saw that jargon barf X3), that just means that it groups commands into three numbers up to 255 (or smth, idfk). It works by using the RGB values of a pixel in an image to point to code snippets in the library. The R channel is the operation, the G channel is the amount of input values, and the B channel is the output.</p>
 <h1 id="why-use-chroma"><a class="header" href="#why-use-chroma">Why Use Chroma++?</a></h1>
 <p>Chroma++ not only allows for the execution of code from an external source, but also allows the loading of new programs and updating old ones at runtime due to the way it works! On top of this, it can reduce the file size of programs drastically, whilst retaining all of the data, meaning you can have twice as many programs with half the storage space</p>
 <div style="break-before: page; page-break-before: always;"></div>
@@ -198,14 +198,20 @@
 <p><img src="images/HelloChroma.png" alt="Oh, it’s some pixels!"></p>
 <p>As you can see, simply printing the string “Hello Chroma!” is shrunken into just six pixels, making the important bits of the file just over 69 Bytes. Nice! (due to how storage works with files under 150 bytes, a computer will show it as being 4.0kb)</p>
 <div style="break-before: page; page-break-before: always;"></div>
+<h1 id="how-pray-tell-does-one-chroma"><a class="header" href="#how-pray-tell-does-one-chroma">How, pray tell, does one Chroma++?</a></h1>
+<p>Well, it’s not that different from any other stack-based coding language (We don’t think), as it’s made of functions, performing operations with inputs, then adding the output to the stack. Here, I’ll walk you through how we made the Hello Chroma program featured in the In Depth section.</p>
+<h1 id="how-to-hello-chroma"><a class="header" href="#how-to-hello-chroma">How-To: Hello Chroma!</a></h1>
+<p>So, first thing you need to do is open up Retro Gadgets, or your preferred pixel art editing software (for this tutorial, I used <a href="https://orama-interactive.itch.io/pixelorama">Pixelorama</a>, but most pixel art editors should work, as long as they let you set the individual RGB values of a colour.)</p>
+<div style="break-before: page; page-break-before: always;"></div>
 <h1 id="what-are-hooks"><a class="header" href="#what-are-hooks">What are Hooks?</a></h1>
-<p>A hook is the name used in Chroma++ for the RGB values of a pixel. Specifically, there are three kinds of hooks:</p>
+<p>A hook is the name used in Chroma++ for the RGB values of a Function Pixel. Specifically, there are three kinds of hooks:</p>
 <ul>
 <li>RedHooks</li>
 <li>GreenHooks</li>
 <li>Bluehooks</li>
 </ul>
 <h1 id="redhooks"><a class="header" href="#redhooks">RedHooks</a></h1>
+<p>A RedHook, being the Red colour channel, tells the interpreter <em>what we’re actually doing</em>, quite literally putting the “Function” in Function Pixels. This is the first thing the interpreter looks at when running a Chroma++ program.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="redhooks-1"><a class="header" href="#redhooks-1">RedHooks</a></h1>
 
